@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skill Hub</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    header { background: #007BFF; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    .hero { background: #f0f0f0; padding: 60px 20px; text-align: center; }
+    section { padding: 40px 20px; }
+    h2 { color: #007BFF; }
+    .courses, .trainers { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card { border: 1px solid #ccc; border-radius: 8px; padding: 20px; flex: 1 1 calc(33% - 40px); box-sizing: border-box; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    @media(max-width: 768px){ .card { flex: 1 1 100%; } }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Skill Hub</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Learn Skills, Build Careers</h2>
+    <p>Join our expert trainers and unlock your potential!</p>
+    <button onclick="alert('Enroll Now!')">Enroll Now</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>My Skill Hub offers high-quality training programs in soft skills, communication, leadership, and more to help students and professionals grow.</p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses">
+      <div class="card">
+        <h3>Communication Skills</h3>
+        <p>Duration: 4 Weeks</p>
+        <p>Fees: ₹10,000</p>
+        <button>Enroll</button>
+      </div>
+      <div class="card">
+        <h3>Leadership Training</h3>
+        <p>Duration: 6 Weeks</p>
+        <p>Fees: ₹15,000</p>
+        <button>Enroll</button>
+      </div>
+      <div class="card">
+        <h3>Interview Preparation</h3>
+        <p>Duration: 3 Weeks</p>
+        <p>Fees: ₹8,000</p>
+        <button>Enroll</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section id="trainers">
+    <h2>Our Trainers</h2>
+    <div class="trainers">
+      <div class="card">
+        <h3>John Doe</h3>
+        <p>Soft Skills Expert</p>
+        <button>Book Session</button>
+      </div>
+      <div class="card">
+        <h3>Jane Smith</h3>
+        <p>Leadership Coach</p>
+        <button>Book Session</button>
+      </div>
+      <div class="card">
+        <h3>David Lee</h3>
+        <p>Interview Specialist</p>
+        <button>Book Session</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name:</label><br>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <label>Email:</label><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <label>Message:</label><br>
+      <textarea placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Skill Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
